@@ -1,0 +1,318 @@
+{
+ "12": {
+  "dung": 17,
+  "tong": 20,
+  "tre_ms": [
+   61000,
+   60000,
+   61000,
+   60000,
+   60001,
+   61006,
+   61000,
+   60000,
+   61000,
+   60000,
+   61000,
+   60000,
+   61000,
+   60000,
+   60001,
+   61006,
+   61000
+  ],
+  "gian_doan": 1,
+  "chi_tiet": [
+   {
+    "lan": 1,
+    "dung": true,
+    "tre_ms": 61000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2288359
+    }
+   },
+   {
+    "lan": 2,
+    "dung": true,
+    "tre_ms": 60000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2358365
+    }
+   },
+   {
+    "lan": 3,
+    "dung": true,
+    "tre_ms": 61000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2429359
+    }
+   },
+   {
+    "lan": 4,
+    "dung": true,
+    "tre_ms": 60000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2499365
+    }
+   },
+   {
+    "lan": 5,
+    "dung": true,
+    "tre_ms": 60001,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2569359
+    }
+   },
+   {
+    "lan": 6,
+    "dung": true,
+    "tre_ms": 61006,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2640365
+    }
+   },
+   {
+    "lan": 7,
+    "dung": true,
+    "tre_ms": 61000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2711359
+    }
+   },
+   {
+    "lan": 8,
+    "dung": true,
+    "tre_ms": 60000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2781365
+    }
+   },
+   {
+    "lan": 9,
+    "dung": true,
+    "tre_ms": 61000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2852359
+    }
+   },
+   {
+    "lan": 10,
+    "dung": true,
+    "tre_ms": 60000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2922365
+    }
+   },
+   {
+    "lan": 11,
+    "dung": true,
+    "tre_ms": 61000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 2993359
+    }
+   },
+   {
+    "lan": 12,
+    "dung": true,
+    "tre_ms": 60000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 3063365
+    }
+   },
+   {
+    "lan": 13,
+    "dung": true,
+    "tre_ms": 61000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 3134359
+    }
+   },
+   {
+    "lan": 14,
+    "dung": true,
+    "tre_ms": 60000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 3204365
+    }
+   },
+   {
+    "lan": 15,
+    "dung": true,
+    "tre_ms": 60001,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 3274359
+    }
+   },
+   {
+    "lan": 16,
+    "dung": true,
+    "tre_ms": 61006,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 3345365
+    }
+   },
+   {
+    "lan": 17,
+    "dung": true,
+    "tre_ms": 61000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 3416359
+    }
+   },
+   {
+    "lan": 18,
+    "dung": false,
+    "tre_ms": null,
+    "ban_tin": {}
+   },
+   {
+    "lan": 19,
+    "dung": false,
+    "tre_ms": null,
+    "ban_tin": {}
+   },
+   {
+    "lan": 20,
+    "dung": false,
+    "tre_ms": null,
+    "ban_tin": {}
+   }
+  ]
+ }
+}

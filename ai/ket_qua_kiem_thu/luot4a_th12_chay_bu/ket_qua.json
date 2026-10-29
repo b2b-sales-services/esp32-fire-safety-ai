@@ -1,0 +1,62 @@
+{
+ "12": {
+  "dung": 3,
+  "tong": 3,
+  "tre_ms": [
+   60001,
+   60001,
+   60000
+  ],
+  "gian_doan": 0,
+  "chi_tiet": [
+   {
+    "lan": 1,
+    "dung": true,
+    "tre_ms": 60001,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 106024
+    }
+   },
+   {
+    "lan": 2,
+    "dung": true,
+    "tre_ms": 60001,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 176024
+    }
+   },
+   {
+    "lan": 3,
+    "dung": true,
+    "tre_ms": 60000,
+    "ban_tin": {
+     "online": true,
+     "tt": "KHOI_PHUC",
+     "khoi": 3966,
+     "lua": 0,
+     "t": 28.2,
+     "muc_ai": 0,
+     "ai": 0,
+     "nguon": "LUAT",
+     "ms": 246030
+    }
+   }
+  ]
+ }
+}

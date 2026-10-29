@@ -1,0 +1,127 @@
+{
+ "ms_suy_luan_tflite": 139.6,
+ "th11_dung": 19,
+ "th11_tong": 20,
+ "th11_chi_tiet": [
+  {
+   "anh": "image_64.jpg",
+   "ti_le_do_cam": 0.692,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_14.jpg",
+   "ti_le_do_cam": 0.411,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 0.997
+  },
+  {
+   "anh": "image_58.jpg",
+   "ti_le_do_cam": 0.393,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_65.jpg",
+   "ti_le_do_cam": 0.285,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 0.999
+  },
+  {
+   "anh": "image_69.jpg",
+   "ti_le_do_cam": 0.238,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_91.jpg",
+   "ti_le_do_cam": 0.236,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_90.jpg",
+   "ti_le_do_cam": 0.234,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 0.995
+  },
+  {
+   "anh": "image_60.jpg",
+   "ti_le_do_cam": 0.228,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 0.998
+  },
+  {
+   "anh": "image_54.jpg",
+   "ti_le_do_cam": 0.208,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_3.jpg",
+   "ti_le_do_cam": 0.207,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_20.jpg",
+   "ti_le_do_cam": 0.203,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_53.jpg",
+   "ti_le_do_cam": 0.199,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_59.jpg",
+   "ti_le_do_cam": 0.19,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_76.jpg",
+   "ti_le_do_cam": 0.181,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 0.999
+  },
+  {
+   "anh": "image_1.jpg",
+   "ti_le_do_cam": 0.18,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 0.997
+  },
+  {
+   "anh": "image_85.jpg",
+   "ti_le_do_cam": 0.16,
+   "nhan": "lua",
+   "do_tin_cay": 0.999
+  },
+  {
+   "anh": "image_50.jpg",
+   "ti_le_do_cam": 0.147,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_82.jpg",
+   "ti_le_do_cam": 0.138,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 0.606
+  },
+  {
+   "anh": "image_44.jpg",
+   "ti_le_do_cam": 0.134,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 1.0
+  },
+  {
+   "anh": "image_51.jpg",
+   "ti_le_do_cam": 0.133,
+   "nhan": "binh_thuong",
+   "do_tin_cay": 0.975
+  }
+ ]
+}

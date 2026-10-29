@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bảng điều khiển PCCC</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Bảng điều khiển phòng cháy chữa cháy - Nhóm 07</h1>
+    <span id="mqtt" class="chip">MQTT: ...</span>
+  </header>
+
+  <main>
+    <section class="the" id="the-trang-thai">
+      <h2>Trạng thái thiết bị (ESP32)</h2>
+      <div id="trang-thai" class="trang-thai">?</div>
+      <div class="dong"><span>Nguồn kích hoạt</span><b id="nguon">-</b></div>
+      <div class="dong"><span>Thiết bị online</span><b id="online">-</b></div>
+      <div class="dong"><span>Bản tin trạng thái cách đây</span><b id="tuoi-status">-</b></div>
+    </section>
+
+    <section class="the">
+      <h2>Cảm biến</h2>
+      <div class="dong"><span>ADC khói (MQ-2)</span><b id="khoi">-</b></div>
+      <div class="dong"><span>Cảm biến lửa</span><b id="lua">-</b></div>
+      <div class="dong"><span>Nhiệt độ (°C)</span><b id="nhiet">-</b></div>
+      <div class="dong"><span>Mức AI thiết bị đang dùng</span><b id="muc-ai">-</b></div>
+      <div class="dong"><span>AI còn hiệu lực trên thiết bị</span><b id="ai-tb">-</b></div>
+    </section>
+
+    <section class="the">
+      <h2>Nhận diện ảnh (AI)</h2>
+      <div id="nhan-ai" class="nhan">-</div>
+      <div class="dong"><span>Độ tin cậy</span><b id="tin-cay">-</b></div>
+      <div class="dong"><span>Bản tin AI cách đây</span><b id="tuoi-ai">-</b></div>
+      <div class="dong"><span>Thời gian suy luận</span><b id="ms">-</b></div>
+      <img id="video" alt="Luồng video AI (chỉ có khi backend chạy với --model)">
+    </section>
+
+    <section class="the rong">
+      <h2>Lịch sử sự kiện</h2>
+      <div class="cong-cu">
+        <span>Kiểm thử tình huống 9 (bản tin sai định dạng):</span>
+        <button data-kieu="khong_json">Không phải JSON</button>
+        <button data-kieu="thieu_truong">Thiếu trường</button>
+        <button data-kieu="nhan_la">Nhãn lạ</button>
+      </div>
+      <table>
+        <thead><tr><th>Thời gian</th><th>Loại</th><th>Nội dung</th></tr></thead>
+        <tbody id="lich-su"></tbody>
+      </table>
+    </section>
+  </main>
+  <footer>Mô hình học thuật, không phải thiết bị PCCC đạt chuẩn và không thay thế thiết bị chuyên dụng.</footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>

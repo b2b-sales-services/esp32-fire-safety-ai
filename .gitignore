@@ -1,0 +1,9 @@
+ai/data/
+ai/raw_video/
+ai/outputs/*.keras
+ai/.venv/
+__pycache__/
+*.pyc
+.pio/
+build/
+*.db

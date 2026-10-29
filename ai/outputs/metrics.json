@@ -1,0 +1,47 @@
+{
+  "do_chinh_xac_test": 0.9433333333333334,
+  "recall_lua": 0.91,
+  "theo_lop": {
+    "binh_thuong": {
+      "precision": 0.9797979797979798,
+      "recall": 0.97,
+      "f1-score": 0.9748743718592965,
+      "support": 100.0
+    },
+    "khoi": {
+      "precision": 0.9313725490196079,
+      "recall": 0.95,
+      "f1-score": 0.9405940594059405,
+      "support": 100.0
+    },
+    "lua": {
+      "precision": 0.9191919191919192,
+      "recall": 0.91,
+      "f1-score": 0.914572864321608,
+      "support": 100.0
+    }
+  },
+  "ma_tran_nham_lan": [
+    [
+      97,
+      0,
+      3
+    ],
+    [
+      0,
+      95,
+      5
+    ],
+    [
+      2,
+      7,
+      91
+    ]
+  ],
+  "ms_suy_luan_keras": 57.42726599999514,
+  "kich_thuoc_tflite_kb": 2452.5,
+  "so_epoch": [
+    10,
+    8
+  ]
+}

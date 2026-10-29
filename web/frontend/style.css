@@ -1,0 +1,31 @@
+:root {
+  --nen: #f4f5f7; --the: #ffffff; --chu: #1d2330; --phu: #667085; --vien: #e3e6eb;
+  --xanh: #1a8f4a; --cam: #d97706; --do: #c62828; --tim: #6d4aa8; --xam: #8a94a6;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --nen: #14171c; --the: #1d2128; --chu: #e8eaed; --phu: #9aa3b2; --vien: #2c313a; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; background: var(--nen); color: var(--chu); }
+header { display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; background: var(--the); border-bottom: 1px solid var(--vien); gap: 12px; flex-wrap: wrap; }
+h1 { font-size: 18px; margin: 0; }
+h2 { font-size: 15px; margin: 0 0 12px; color: var(--phu); font-weight: 600; }
+main { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; padding: 16px 20px; }
+.the { background: var(--the); border: 1px solid var(--vien); border-radius: 10px; padding: 16px; }
+.rong { grid-column: 1 / -1; }
+.dong { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px dashed var(--vien); font-size: 14px; }
+.dong span { color: var(--phu); }
+.trang-thai, .nhan { font-size: 26px; font-weight: 700; text-align: center; padding: 18px 8px; border-radius: 8px; margin-bottom: 10px; color: #fff; background: var(--xam); }
+.BINH_THUONG, .binh_thuong { background: var(--xanh); }
+.CANH_BAO, .khoi { background: var(--cam); }
+.CHUA_CHAY, .lua { background: var(--do); }
+.KHOI_PHUC { background: var(--tim); }
+.chip { font-size: 13px; padding: 4px 10px; border-radius: 99px; background: var(--xam); color: #fff; }
+.chip.ok { background: var(--xanh); }
+#video { width: 100%; margin-top: 10px; border-radius: 6px; background: #000; min-height: 40px; }
+.cong-cu { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; font-size: 14px; color: var(--phu); }
+button { border: 1px solid var(--vien); background: var(--nen); color: var(--chu); padding: 6px 10px; border-radius: 6px; cursor: pointer; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--vien); vertical-align: top; }
+td:last-child { font-family: Consolas, monospace; word-break: break-all; }
+footer { text-align: center; color: var(--phu); font-size: 12px; padding: 8px 16px 20px; }

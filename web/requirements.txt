@@ -1,0 +1,7 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+paho-mqtt>=2.0
+numpy<2
+opencv-python>=4.8
+# Chi can khi backend tu chay mo hinh (--model):
+tensorflow==2.15.1
