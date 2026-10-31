@@ -1,16 +1,18 @@
-# Nhóm 07 - INT1461 - Hệ thống phòng cháy chữa cháy mô phỏng trên Wokwi
+# Nhom07-INT1461-Phong-chay-chua-chay
 
-Đề tài: Mô phỏng hệ thống phòng cháy, chữa cháy bằng Wokwi, tích hợp mô hình AI nhận diện
+**Tên đề tài:** Mô phỏng hệ thống phòng cháy, chữa cháy bằng Wokwi, tích hợp mô hình AI nhận diện
 lửa và khói để điều khiển hệ thống chữa cháy.
 
 Học phần: Xây dựng các hệ thống nhúng (INT1461) - Học kỳ 1, năm học 2026 - 2027.
 Giảng viên hướng dẫn: ThS. Hồ Nhựt Minh.
 
-| STT | Thành viên | Phụ trách chính |
-|---|---|---|
-| 1 | Đại Anh Dũng | Tập ảnh, huấn luyện mô hình, chương trình Python phát nhãn |
-| 2 | Lê Trường Giang | Mạch Wokwi, firmware cảm biến, máy trạng thái, chấp hành, hoàn thiện báo cáo |
-| 3 | Nguyễn Văn Anh | Kênh MQTT, quy tắc hợp nhất, tích hợp AI với backend/frontend, kiểm thử |
+## Thành viên nhóm
+
+| STT | Họ và tên | Mã sinh viên | Mã lớp | Phụ trách chính |
+|---|---|---|---|---|
+| 1 | Lê Trường Giang | K23DTCN475 | D23TXCN06-K | Mạch Wokwi, firmware cảm biến, máy trạng thái, chấp hành, hoàn thiện báo cáo |
+| 2 | Đại Anh Dũng | K23DTCN268 | D23TXCN06-K | Tập ảnh, huấn luyện mô hình, chương trình Python phát nhãn |
+| 3 | Nguyễn Văn Anh | K23DTCN473 | D23TXCN06-K | Kênh MQTT, quy tắc hợp nhất, tích hợp AI với backend/frontend, kiểm thử |
 
 Dự án Wokwi (công khai): https://wokwi.com/projects/479188342847712257
 
@@ -51,7 +53,25 @@ web/
   requirements.txt
 ```
 
-## 3. Phần mềm và thư viện
+## 3. Danh mục linh kiện (thiết bị mô phỏng trên Wokwi)
+
+| STT | Linh kiện | Mã phần tử Wokwi | Số lượng | Vai trò |
+|---|---|---|---|---|
+| 1 | ESP32 DevKit V1 | `wokwi-esp32-devkit-v1` | 1 | Vi điều khiển trung tâm, Wi-Fi + MQTT |
+| 2 | Cảm biến khí/khói MQ-2 | `wokwi-gas-sensor` | 1 | Đo nồng độ khói (ADC) |
+| 3 | Cảm biến lửa | `wokwi-flame-sensor` | 1 | Phát hiện ngọn lửa (DOUT/AOUT) |
+| 4 | Cảm biến nhiệt độ, độ ẩm DHT22 | `wokwi-dht22` | 1 | Nhiệt độ tuyệt đối và tốc độ tăng nhiệt |
+| 5 | Module relay | `wokwi-relay-module` | 2 | Bơm chữa cháy, van/quạt hút |
+| 6 | Còi chip | `wokwi-buzzer` | 1 | Báo động âm thanh |
+| 7 | LED đỏ (BÁO ĐỘNG), LED xanh (BÌNH THƯỜNG) + điện trở 220 Ω | `wokwi-led`, `wokwi-resistor` | 2 + 2 | Báo trạng thái |
+| 8 | LED xanh dương (BƠM), LED vàng (VAN) + điện trở 220 Ω | `wokwi-led`, `wokwi-resistor` | 2 + 2 | Tải giả nối sau tiếp điểm NO của hai relay, sáng khi relay đóng |
+| 9 | Nút nhấn | `wokwi-pushbutton` | 2 | Nút vàng XÁC NHẬN; nút đỏ MÔ PHỎNG LỬA |
+| 10 | LCD 16x2 giao tiếp I2C (0x27) | `wokwi-lcd1602` | 1 | Hiển thị số liệu và trạng thái |
+| 11 | Máy tính chạy Python + webcam/video | (ngoài Wokwi) | 1 | Nhánh AI nhận diện lửa/khói, bảng điều khiển web |
+
+Sơ đồ nối dây đầy đủ nằm trong `firmware/diagram.json`.
+
+## 4. Phần mềm và thư viện (cách nạp chương trình)
 
 | Thành phần | Phiên bản đã dùng |
 |---|---|
@@ -65,7 +85,7 @@ web/
 | Python | 3.10 - 3.11 |
 | TensorFlow / OpenCV / paho-mqtt | 2.15 / 4.8+ / 2.x |
 
-## 4. Sơ đồ chân (ESP32 DevKit V1)
+## 5. Sơ đồ chân (ESP32 DevKit V1)
 
 | Linh kiện | Chân linh kiện | Chân ESP32 | Ghi chú |
 |---|---|---|---|
@@ -84,7 +104,7 @@ web/
 
 Mọi cảm biến analog nằm trên ADC1 vì ADC2 không đọc được khi Wi-Fi bật.
 
-## 5. Chạy mô phỏng trên Wokwi
+## 6. Nạp và chạy mô phỏng trên Wokwi
 
 1. Mở https://wokwi.com, tạo dự án **ESP32**, đặt tên `Nhom07_PhongChayChuaChay`.
 2. Dán nội dung `firmware/sketch.ino` vào `sketch.ino`, `firmware/diagram.json` vào `diagram.json`.
@@ -97,7 +117,7 @@ Mọi cảm biến analog nằm trên ADC1 vì ADC2 không đọc được khi W
 Ngưỡng khói đã hiệu chuẩn trên Wokwi: 400 ppm (mặc định) -> ADC 3628, 1259 ppm -> 3790 (CẢNH BÁO),
 11482 ppm -> 3966 (CHỮA CHÁY). Ngưỡng 3750 / 3900, độ trễ 40. Mạch thật phải hiệu chuẩn lại.
 
-## 6. Chạy nhánh AI trên máy tính
+## 7. Chạy nhánh AI trên máy tính
 
 ```bash
 cd ai
@@ -127,7 +147,7 @@ phòng: `test.mosquitto.org:1883`, đổi ở `MQTT_BROKER` trong `sketch.ino` v
 `--broker` của các chương trình Python. Không đưa mật khẩu Wi-Fi thật, khóa API hay token
 vào mã nguồn.
 
-## 7. Bảng điều khiển web (tích hợp AI với backend và frontend)
+## 8. Bảng điều khiển web (tích hợp AI với backend và frontend)
 
 ```bash
 cd web
@@ -136,10 +156,26 @@ pip install -r requirements.txt
 python backend/app.py
 # Backend tự chạy mô hình AI từ webcam:
 python backend/app.py --model ../ai/outputs/model_lua_khoi.tflite --source 0
-```n
+```
+
 Mở http://localhost:8000. Dùng `--host 0.0.0.0` nếu muốn máy khác trong mạng LAN xem.
 
-## 8. Nguồn tham khảo mã
+## 9. Chạy thử và kết quả mong đợi
+
+| Thao tác thử | Kết quả mong đợi |
+|---|---|
+| Khởi động mô phỏng, không tác động | LCD dòng 1 `NHOM 07 - PCCC`, sau đó đếm `LAM NONG MQ2` 20 s rồi `BINHTHUONG`; LED xanh sáng; Serial in `# MQTT,da ket noi broker.hivemq.com,...` |
+| Kéo GAS lên khoảng 1259 ppm (ADC ≈ 3790) | Chuyển `CANH BAO`: LED đỏ, còi kêu, bơm và van chưa bật |
+| Kéo GAS lên khoảng 11482 ppm (ADC ≈ 3966), giữ nút MÔ PHỎNG LỬA, hoặc nhiệt độ DHT22 ≥ 55 °C / tăng ≥ 2 °C/s | Chuyển `CHUA CHAY`: relay bơm và relay van đóng (LED BƠM, LED VAN sáng), còi kêu, LED đỏ sáng |
+| Gửi nhãn AI `lua`/`khoi` với độ tin cậy ≥ 0,80 qua `ptit/nhom07/fire` | Mức báo động được nâng, LCD hiện nguồn kích hoạt `AI`; nhãn AI không bao giờ hạ mức của luật cục bộ |
+| Gửi bản tin hỏng (`mqtt_test_client.py hong`) hoặc ngừng gửi nhãn quá 15 s | Bản tin bị bỏ qua; LCD hiện `MATAI`, luật cục bộ vẫn hoạt động bình thường |
+| Đưa cảm biến về an toàn | Chuyển `KHOI PHUC`: bơm tắt, LED đỏ giữ sáng cho tới khi nhấn nút XÁC NHẬN thì về `BINHTHUONG` |
+| Duy trì nguy hiểm quá 60 s | Bơm tự cắt, chuyển `KHOI PHUC`, còi gọi người vận hành; chỉ bơm lại khi nhấn XÁC NHẬN |
+| Mở http://localhost:8000 (mục 8) | Bảng điều khiển hiện trạng thái thiết bị theo thời gian thực qua chủ đề `ptit/nhom07/status` |
+
+Kết quả chi tiết 13 tình huống kiểm thử (mỗi tình huống 20 lần) có trong Bảng 5.2 của báo cáo.
+
+## 10. Nguồn tham khảo mã
 
 - Khung chương trình trong tài liệu "Hướng dẫn thực hiện đồ án INT1461 - Nhóm 7", Phần F
   (ThS. Hồ Nhựt Minh, 2026) - nhóm đã viết thân các hàm còn thiếu và bổ sung như ghi ở đầu
